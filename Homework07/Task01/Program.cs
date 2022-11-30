@@ -1,6 +1,5 @@
 ﻿// Доделать ввод многочлена
 // https://github.com/iksergey/multi/blob/lesson7/Program.cs
-// *Сделать вывод только нечетных коэффициентов у треугольника распечатайте хотя бы 120 строк
 
 
 int[,] CreateTriangle(int row)
