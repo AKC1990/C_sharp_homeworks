@@ -57,14 +57,17 @@ string PrintPolynom(int[] array)
     
     if (i == 0) { output += $"a{pows[array.Length-1]}"; }
     if (i == array.Length - 1) { output += $"b{pows[array.Length-1]}"; }
-    else { output += $"{t}a{pows[array.Length - i - 1]}*b{pows[i]}"; }
+    else if (i != 0 && i != array.Length - 1) 
+    { 
+      output += $"{t}a{pows[array.Length - i - 1]}*b{pows[i]}"; 
+    }
 
   }
   return output;
 }
 
 int[,] tr = CreateTriangle(10);                 // Число в скобках указывает на размер треугольника Паскаля
-int row = 9;                                     // Число указывает на степень возведения уравнения (a + b)
+int row = 4;                                     // Число указывает на степень возведения уравнения (a + b)
 PrintTriangle(tr);
 int[] koeff = GetKoeff(tr, row);                
 Console.WriteLine(String.Join(' ', koeff));
