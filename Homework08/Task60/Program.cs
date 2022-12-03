@@ -19,8 +19,8 @@ int countOfSides = 2;                                                           
 int[,,] matrix = new int[countOfRows, countOfColumns, countOfSides];
 int [] totalArray = new int[countOfRows * countOfColumns * countOfSides];        //Создаем одномерный массив уникальных значений для дальнейшей проверки на уникальность значений
 
-int minValue = 1;                                                                // Задаем минимальное значение генерируемого числа
-int maxValue = 20;                                                               // Задаем максимальное значение генерируемого числа
+int minValue = 10;                                                                // Задаем минимальное значение генерируемого числа
+int maxValue = 100;                                                               // Задаем максимальное значение генерируемого числа
 
 for (int i = 0; i < matrix.GetLength(0); i++)
 {
