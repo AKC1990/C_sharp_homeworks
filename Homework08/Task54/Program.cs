@@ -42,7 +42,7 @@ int [,] SortMatrix(int[,] matrix)
         {
            for (int k = 0; k < matrix.GetLength(1)-1; k++)
            {
-            if (matrix[i,k] > matrix [i,k+1])
+            if (matrix[i,k] < matrix [i,k+1])
             {
                 tempValue = matrix[i,k];
                 matrix[i,k] = matrix [i,k+1];
