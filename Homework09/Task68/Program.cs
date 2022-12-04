@@ -9,8 +9,8 @@ return AckermannFunction(M, N);
 }
 
 //Клиентский код
-Console.WriteLine("Введите начальное число M:");
+Console.WriteLine("Enter number M:");
 int M = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите начальное число N:");
+Console.WriteLine("Enter number N:");
 int N = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"Функция Аккермана для чисел A({M},{N}) = {AckermannFunction(M, N)}");
+Console.WriteLine($"A({M},{N}) = {AckermannFunction(M, N)}");
